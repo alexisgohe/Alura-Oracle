@@ -19,7 +19,7 @@ btnDesencriptar.addEventListener("click", function () {
 function encriptar() {
   var text = textarea.value; // Obtener el contenido del primer textarea
   text = text.toLowerCase();
-  let caracteresEspeciales = text.match(/[^a-z\n]/g);
+  let caracteresEspeciales = text.match(/[/^[a-z\n ]+$/);
   var nuevotexto = "";
 
   if (text.trim() === "") {
