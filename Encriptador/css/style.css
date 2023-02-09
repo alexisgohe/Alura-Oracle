@@ -1,0 +1,277 @@
+:root {
+  --color-primario: #0099ff;
+  --color-secundario: #333333;
+  --color-gray: #494949;
+  --color-white-fondo: #f9f9f9;
+  --color-white: #ffffff;
+
+  --shadow-color: 0deg 0% 63%;
+  --shadow-elevation-medium: 0.3px 0.3px 0.5px hsl(var(--shadow-color) / 0.36),
+    0.8px 0.8px 1.3px -0.8px hsl(var(--shadow-color) / 0.36),
+    2.1px 2.1px 3.3px -1.7px hsl(var(--shadow-color) / 0.36),
+    5px 5px 8px -2.5px hsl(var(--shadow-color) / 0.36);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  background-color: #121a21;
+}
+
+body {
+  background-color: var(--color-white-fondo);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  margin: auto;
+  width: 95%;
+  height: 55px;
+  display: flex;
+  align-items: center;
+}
+
+.link_logo {
+  text-decoration: none;
+  display: inline-flex;
+}
+
+.logo_developers {
+  width: 45px;
+  margin: 0 5px;
+}
+
+.logo_alura {
+  width: 25px;
+  margin: 0 5px;
+}
+
+.mensaje_encriptado {
+  display: flex;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.mensaje_ingresado {
+  width: 50%;
+  padding: 30px;
+}
+
+.textarea_mensaje {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  color: var(--color-secundario);
+  font-size: 20px;
+  border: solid 1px var(--color-white-fondo);
+  background-color: var(--color-white-fondo);
+  resize: none;
+}
+
+.textarea_mensaje:focus {
+  outline: none;
+}
+
+.mensaje_resultado {
+  width: 50%;
+  height: 579px;
+  background-color: var(--color-white);
+  border-radius: 32px;
+  box-shadow: var(--shadow-elevation-medium);
+  padding: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#divOculto {
+  display: none;
+}
+
+.img_search {
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+
+.text_search {
+  padding: 15px;
+  text-align: center;
+}
+
+.text_paragraph {
+  text-align: center;
+  font-size: 13px;
+}
+
+.container_boton {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 25px 0;
+}
+
+span {
+  display: flex;
+  align-items: initial;
+}
+
+.text_info {
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 15px;
+  width: 250px;
+  height: 50px;
+  margin: 10px;
+}
+
+.copiar {
+  background-color: var(--color-white);
+  color: var(--color-primario);
+  border: solid 1px var(--color-primario);
+  display: block;
+  margin: auto;
+}
+
+.encriptar {
+  background-color: var(--color-primario);
+  color: var(--color-white);
+  border: solid 1px var(--color-primario);
+}
+
+.desencriptar {
+  background-color: var(--color-secundario);
+  color: var(--color-white);
+  border: solid 1px var(--color-secundario);
+}
+
+.textarea_resultado {
+  width: 100%;
+  height: 80%;
+  padding: 20px;
+  color: var(--color-gray);
+  font-size: 20px;
+  border: solid 1px var(--color-white);
+  background-color: var(--color-white);
+  resize: none;
+  pointer-events: none;
+}
+
+.textarea_resultado:focus {
+  outline: none;
+}
+
+.container_footer {
+  background-color: #121a21;
+}
+
+.f-menu {
+  position: relative;
+  padding: 10px 0;
+  font-size: 0;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 15px;
+  padding-right: 15px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+a:hover {
+  color: var(--color-primario);
+}
+
+a:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  border-right: none;
+}
+
+.footer-copyright {
+  padding: 20px 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  color: #ddd;
+}
+.copy {
+  margin: auto;
+}
+.designed {
+  margin: auto;
+}
+.logo_developers_completo {
+  width: 135px;
+  margin: auto;
+}
+
+@media (max-width: 720px) {
+  header {
+    justify-content: center;
+  }
+
+  .mensaje_encriptado {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .mensaje_ingresado {
+    width: 100%;
+  }
+
+  .mensaje_resultado {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+  }
+
+  .textarea_resultado {
+    padding: 0;
+  }
+
+  .img_search {
+    display: none;
+  }
+
+  .container_boton {
+    width: 100%;
+  }
+  .footer-copyright {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .copy {
+    padding-bottom: 20px;
+  }
+  .designed {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 565px) {
+  .btns {
+    display: flex;
+    flex-direction: column;
+  }
+}

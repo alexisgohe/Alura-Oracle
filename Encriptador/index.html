@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <header>
+      <a class="link_logo" href="#">
+        <img
+          class="logo_developers"
+          src="img/logo.png"
+          alt="Logo DevelopersCode"
+        />
+      </a>
+      <a class="link_logo" href="#">
+        <img class="logo_alura" src="img/alura.svg" alt="Logo Alura Latam" />
+      </a>
+    </header>
+    <div class="container">
+      <section class="mensaje_encriptado">
+        <div class="mensaje_ingresado">
+          <textarea
+            class="textarea_mensaje"
+            placeholder="Ingrese el texto aqui..."
+            name="Mensaje"
+            id="area_mensaje"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <div id="divVisible" class="mensaje_resultado">
+          <img
+            class="img_search"
+            src="img/no_search.svg"
+            alt="Mensaje no encontrado"
+          />
+          <h2 class="text_search">Ningún mensaje fue encontrado</h2>
+          <p class="text_paragraph">
+            Ingresa el texto que deses encriptar o desencriptar
+          </p>
+        </div>
+        <div id="divOculto" class="mensaje_resultado">
+          <textarea
+            class="textarea_resultado"
+            name="Mensaje resultado"
+            id="texto_desencriptado"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button id="btn_copiar" class="btn copiar">Copiar</button>
+        </div>
+      </section>
+      <section class="section_btn">
+        <div class="container_boton">
+          <span>
+            <img src="img/circle.svg" alt="Puntos a tomar en cuenta" />
+            <p class="text_info">Solo letras minúsculas y sin acentos</p>
+          </span>
+          <div class="btns">
+            <button id="btn_encriptar" class="btn encriptar">Encriptar</button>
+            <button id="btn_desencriptar" class="btn desencriptar">
+              Desencriptar
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="container_footer">
+      <div class="footer-menu">
+        <div class="f-menu">
+          <a href="#">Privacy policy</a>
+          <a href="#">Cookies</a>
+          <a href="#">Help</a>
+          <a href="#">FQAs</a>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p class="copy">&copy; DevelopersCode, All Right Reserved.</p>
+        <img
+          class="logo_developers_completo"
+          src="img/logo_2.png"
+          alt="Logo de Developers Code"
+        />
+        <p class="designed">Designed By AGH</p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
